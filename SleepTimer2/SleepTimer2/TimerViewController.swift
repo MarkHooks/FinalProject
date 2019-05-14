@@ -55,9 +55,7 @@ class TimerViewController: UIViewController {
         clock.text = String(counter)
         // Do any additional setup after loading the view.
     }
-    static func saveToFile(){
-        
-    }
+
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "SleepSegue"{
             let viewController = segue.destination as! SleepTableTableViewController

@@ -21,10 +21,9 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="day" translatesAutoresizingMaskIntoConstraints="NO" id="wYs-pr-jYb">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="fill" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gX0-on-R0L">
-                                <rect key="frame" x="140" y="431" width="137" height="73"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gX0-on-R0L">
+                                <rect key="frame" x="0.0" y="44" width="375" height="624"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Start"/>
                                 <connections>
                                     <segue destination="szW-er-gHq" kind="show" id="yp6-0F-xyW"/>
@@ -33,11 +32,15 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="gX0-on-R0L" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="44" id="8rL-Nz-jIk"/>
                             <constraint firstItem="wYs-pr-jYb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CSi-mR-LDV"/>
                             <constraint firstAttribute="trailing" secondItem="wYs-pr-jYb" secondAttribute="trailing" id="Cef-uZ-63d"/>
+                            <constraint firstAttribute="bottom" secondItem="gX0-on-R0L" secondAttribute="bottom" constant="-1" id="bkb-st-x1g"/>
                             <constraint firstItem="wYs-pr-jYb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="e1H-dH-WXH"/>
                             <constraint firstItem="wYs-pr-jYb" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="mNe-pm-gWg"/>
                             <constraint firstItem="wYs-pr-jYb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="tGV-g7-je2"/>
+                            <constraint firstItem="gX0-on-R0L" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="uG9-vL-Cy2"/>
+                            <constraint firstItem="gX0-on-R0L" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="vXZ-7j-lIA"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
