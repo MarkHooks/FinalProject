@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SleepTableTableViewController: UITableViewController {
+class Sleep11TableViewController: UITableViewController {
     var stime = [Time]()
     override func viewDidLoad() {
         super.viewDidLoad()

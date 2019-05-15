@@ -21,6 +21,12 @@ class TimerViewController: UIViewController {
     @IBAction func Stop(_ sender: Any) {
         timer?.invalidate()
         isPlaying = false
+        let sleepTime = [clock.text]
+        var stime = Time.loadFromFile()
+        if let newTime = clock.text{
+            stime?.append(Time(time: newTime))
+        }
+        print(sleepTime)
     }
     
     @IBAction func Start(_ sender: Any) {
@@ -38,9 +44,8 @@ class TimerViewController: UIViewController {
         
         seconds += 1
         clock.text = timeString(time: TimeInterval(seconds))
-        let sleepTime = [clock.text]
-        print(sleepTime)
-        
+
+
     }
     func timeString(time: TimeInterval) -> String {
         let hours = Int(time) / 3600
@@ -58,7 +63,7 @@ class TimerViewController: UIViewController {
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "SleepSegue"{
-            let viewController = segue.destination as! SleepTableTableViewController
+            let viewController = segue.destination as! Sleep11TableViewController
             
         }
     }

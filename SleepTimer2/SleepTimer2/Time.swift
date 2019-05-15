@@ -8,9 +8,9 @@
 
 import Foundation
 struct Time: Codable{
-    
+    var time: String
     static func loadTime() ->[Time]{
-        let stime = [Time()]
+        let stime = [Time(time: "00:00:00")]
         return stime
     }
     static func saveToFile(stime: [Time]){

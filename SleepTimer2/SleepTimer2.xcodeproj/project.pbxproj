@@ -15,7 +15,7 @@
 		4D3CA1B4228358AE00A31FC2 /* SleepTimer2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3CA1B3228358AE00A31FC2 /* SleepTimer2Tests.swift */; };
 		4D3CA1BF228358AE00A31FC2 /* SleepTimer2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3CA1BE228358AE00A31FC2 /* SleepTimer2UITests.swift */; };
 		4D3CA1CD228358DE00A31FC2 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3CA1CC228358DE00A31FC2 /* TimerViewController.swift */; };
-		4D9810B32289AF5B000EC2FE /* SleepTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9810B22289AF5B000EC2FE /* SleepTableTableViewController.swift */; };
+		4D9810B32289AF5B000EC2FE /* Sleep11TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9810B22289AF5B000EC2FE /* Sleep11TableViewController.swift */; };
 		4D9810B52289B0F8000EC2FE /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9810B42289B0F8000EC2FE /* Time.swift */; };
 /* End PBXBuildFile section */
 
@@ -51,7 +51,7 @@
 		4D3CA1BE228358AE00A31FC2 /* SleepTimer2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepTimer2UITests.swift; sourceTree = "<group>"; };
 		4D3CA1C0228358AE00A31FC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D3CA1CC228358DE00A31FC2 /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
-		4D9810B22289AF5B000EC2FE /* SleepTableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepTableTableViewController.swift; sourceTree = "<group>"; };
+		4D9810B22289AF5B000EC2FE /* Sleep11TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sleep11TableViewController.swift; sourceTree = "<group>"; };
 		4D9810B42289B0F8000EC2FE /* Time.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Time.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -103,7 +103,7 @@
 		4D3CA19D228358AC00A31FC2 /* SleepTimer2 */ = {
 			isa = PBXGroup;
 			children = (
-				4D9810B22289AF5B000EC2FE /* SleepTableTableViewController.swift */,
+				4D9810B22289AF5B000EC2FE /* Sleep11TableViewController.swift */,
 				4D3CA19E228358AC00A31FC2 /* AppDelegate.swift */,
 				4D3CA1A0228358AC00A31FC2 /* ViewController.swift */,
 				4D3CA1CC228358DE00A31FC2 /* TimerViewController.swift */,
@@ -268,7 +268,7 @@
 				4D3CA1A1228358AC00A31FC2 /* ViewController.swift in Sources */,
 				4D3CA1CD228358DE00A31FC2 /* TimerViewController.swift in Sources */,
 				4D9810B52289B0F8000EC2FE /* Time.swift in Sources */,
-				4D9810B32289AF5B000EC2FE /* SleepTableTableViewController.swift in Sources */,
+				4D9810B32289AF5B000EC2FE /* Sleep11TableViewController.swift in Sources */,
 				4D3CA19F228358AC00A31FC2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
