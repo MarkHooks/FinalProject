@@ -12,7 +12,7 @@ class Sleep11TableViewController: UITableViewController {
     var stime = [Time]()
     override func viewDidLoad() {
         super.viewDidLoad()
-
+       
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -24,16 +24,19 @@ class Sleep11TableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 01
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "SleepCell", for: indexPath)
+        let times = stime[indexPath.row]
+        cell.detailTextLabel?.text = times.time
+
 
         // Configure the cell...
 
@@ -61,12 +64,14 @@ class Sleep11TableViewController: UITableViewController {
     }
     */
 
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
 
+    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
+        let movedTime = stime.remove(at: fromIndexPath.row)
+        stime.insert(movedTime, at: to.row)
+        Time.saveToFile(stime: stime)
+        tableView.reloadData()
     }
-    */
+
 
     /*
     // Override to support conditional rearranging of the table view.
@@ -85,5 +90,6 @@ class Sleep11TableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
+
 
 }

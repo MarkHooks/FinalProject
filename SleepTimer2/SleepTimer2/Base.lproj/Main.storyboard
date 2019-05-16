@@ -85,7 +85,7 @@
                                 <state key="normal" title="Stop"/>
                                 <connections>
                                     <action selector="Stop:" destination="szW-er-gHq" eventType="touchUpInside" id="UIk-G6-xcK"/>
-                                    <segue destination="CT7-cx-HFq" kind="show" id="zjb-du-lDO"/>
+                                    <segue destination="CT7-cx-HFq" kind="show" identifier="" id="zjb-du-lDO"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -108,10 +108,10 @@
             </objects>
             <point key="canvasLocation" x="1695.2" y="133.5832083958021"/>
         </scene>
-        <!--Sleep Table Table View Controller-->
+        <!--Sleep11 Table View Controller-->
         <scene sceneID="YXQ-39-3Qm">
             <objects>
-                <tableViewController id="CT7-cx-HFq" customClass="SleepTableTableViewController" customModule="SleepTimer2" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="CT7-cx-HFq" customClass="Sleep11TableViewController" customModule="SleepTimer2" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="WmT-dW-06f">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -120,7 +120,7 @@
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SleepCell" textLabel="7gB-j2-ffj" detailTextLabel="RzG-sh-Bmy" style="IBUITableViewCellStyleSubtitle" id="kap-pO-3Vq">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kap-pO-3Vq" id="taA-Ow-luq">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kap-pO-3Vq" id="taA-Ow-luq" customClass="TimeCellTableViewCell" customModule="SleepTimer2" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
@@ -139,6 +139,9 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
+                                    <connections>
+                                        <outlet property="nameLabel" destination="7gB-j2-ffj" id="pFV-xL-cMV"/>
+                                    </connections>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
