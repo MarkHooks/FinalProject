@@ -85,7 +85,7 @@
                                 <state key="normal" title="Stop"/>
                                 <connections>
                                     <action selector="Stop:" destination="szW-er-gHq" eventType="touchUpInside" id="UIk-G6-xcK"/>
-                                    <segue destination="CT7-cx-HFq" kind="show" identifier="" id="zjb-du-lDO"/>
+                                    <segue destination="CT7-cx-HFq" kind="show" identifier="SleepSegue" id="zjb-du-lDO"/>
                                 </connections>
                             </button>
                         </subviews>

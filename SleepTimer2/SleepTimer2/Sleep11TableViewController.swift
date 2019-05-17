@@ -9,7 +9,7 @@
 import UIKit
 
 class Sleep11TableViewController: UITableViewController {
-    var stime = [Time]()
+    var stime: [Time]!
     override func viewDidLoad() {
         super.viewDidLoad()
        
@@ -29,13 +29,14 @@ class Sleep11TableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 1
+        return stime.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "SleepCell", for: indexPath)
         let times = stime[indexPath.row]
         cell.detailTextLabel?.text = times.time
+        cell.textLabel?.text = "Day \(1)"
 
 
         // Configure the cell...

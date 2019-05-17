@@ -14,6 +14,8 @@ class TimerViewController: UIViewController {
     var isPlaying = false
     var counter  = 0
     var seconds = 0
+    var times = [Time(time: ""), Time(time: "")]
+    
     
     ///https://www.ioscreator.com/tutorials/stopwatch-tutorial
     @IBOutlet weak var clock: UILabel!
@@ -64,7 +66,10 @@ class TimerViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "SleepSegue"{
             let viewController = segue.destination as! Sleep11TableViewController
-            
+            let sleepTime = clock.text!
+            let newTime = Time(time: "\(sleepTime)")
+            times.append(newTime)
+            viewController.stime = times
         }
     }
     
