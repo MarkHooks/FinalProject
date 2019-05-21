@@ -35,8 +35,7 @@ class Sleep11TableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "SleepCell", for: indexPath)
         let times = stime[indexPath.row]
-        cell.detailTextLabel?.text = times.time
-        cell.textLabel?.text = "Day \(1)"
+        cell.textLabel?.text = times.time
 
 
         // Configure the cell...

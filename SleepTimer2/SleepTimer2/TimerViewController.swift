@@ -14,7 +14,7 @@ class TimerViewController: UIViewController {
     var isPlaying = false
     var counter  = 0
     var seconds = 0
-    var times = [Time(time: ""), Time(time: "")]
+    var times = [Time]()
     
     
     ///https://www.ioscreator.com/tutorials/stopwatch-tutorial
