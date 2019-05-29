@@ -10,9 +10,18 @@ import UIKit
 
 class Sleep11TableViewController: UITableViewController {
     var stime: [Time]!
+    var t: Time?
+    
     override func viewDidLoad() {
+        
         super.viewDidLoad()
-       
+        stime = [Time]()
+        if let tims = Time.loadFromFile(){
+            stime = tims
+            stime.append(t!)
+        }else{
+            stime.append(t!)
+        }
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -42,7 +51,9 @@ class Sleep11TableViewController: UITableViewController {
 
         return cell
     }
-
+    override func viewWillDisappear(_ animated: Bool) {
+        Time.saveToFile(stime: stime)
+    }
 
     /*
     // Override to support conditional editing of the table view.

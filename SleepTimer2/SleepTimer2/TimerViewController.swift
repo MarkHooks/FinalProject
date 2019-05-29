@@ -68,8 +68,8 @@ class TimerViewController: UIViewController {
             let viewController = segue.destination as! Sleep11TableViewController
             let sleepTime = clock.text!
             let newTime = Time(time: "\(sleepTime)")
-            times.append(newTime)
-            viewController.stime = times
+  
+            viewController.t = newTime
         }
     }
     
