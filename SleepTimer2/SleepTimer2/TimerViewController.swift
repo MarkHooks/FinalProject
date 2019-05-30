@@ -12,7 +12,7 @@ class TimerViewController: UIViewController {
 
     var timer : Timer?
     var isPlaying = false
-    var counter  = 0
+    var counter  = 0000000
     var seconds = 0
     var times = [Time]()
     
@@ -21,6 +21,7 @@ class TimerViewController: UIViewController {
     @IBOutlet weak var clock: UILabel!
     
     @IBAction func Stop(_ sender: Any) {
+        // this stops the clock
         timer?.invalidate()
         isPlaying = false
         let sleepTime = [clock.text]
@@ -37,19 +38,21 @@ class TimerViewController: UIViewController {
             return
             
         }
+        // this starts the clock
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updateTimer), userInfo: nil, repeats: true)
         isPlaying = true
         
     }
     
     @objc func updateTimer() {
-        
+        // this adds seconds to the clock
         seconds += 1
         clock.text = timeString(time: TimeInterval(seconds))
 
 
     }
     func timeString(time: TimeInterval) -> String {
+        // this sets up the clock
         let hours = Int(time) / 3600
         let minutes = Int(time) / 60 % 60
         let seconds = Int(time) % 60
@@ -64,6 +67,7 @@ class TimerViewController: UIViewController {
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        //this is to send the time to the table view controller 
         if segue.identifier == "SleepSegue"{
             let viewController = segue.destination as! Sleep11TableViewController
             let sleepTime = clock.text!

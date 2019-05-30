@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+// this is to set up the induvidual cells
 class TimeCellTableViewCell: UITableViewCell {
     @IBOutlet weak var nameLabel: UILabel!
     override func awakeFromNib() {

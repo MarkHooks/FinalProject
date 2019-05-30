@@ -14,6 +14,7 @@ struct Time: Codable{
         return stime
     }
     static func saveToFile(stime: [Time]){
+        // this is to save the time to the phone
         let propertyListEncoder = PropertyListEncoder()
         let documentsDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
         let archiveURL = documentsDirectory.appendingPathComponent("SleepTime").appendingPathExtension("plist")
@@ -21,6 +22,7 @@ struct Time: Codable{
         try?encodeNotes?.write(to: archiveURL, options: .noFileProtection)
     }
     static func loadFromFile() -> [Time]?{
+        // this is to load the time to the phone
         let documentsDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
         let archiveURL = documentsDirectory.appendingPathComponent("SleepTime").appendingPathExtension("plist")
         let propertyListDecoder = PropertyListDecoder()
